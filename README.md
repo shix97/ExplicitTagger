@@ -38,38 +38,6 @@ Three modes:
 
 ---
 
-## Building
-
-```bash
-git clone https://github.com/your-username/ExplicitTagger.git
-cd ExplicitTagger/AdvisoryTagger
-bash build_app.sh
-```
-
-This produces `ExplicitTagger.app` in the `AdvisoryTagger` folder. Drag it to `/Applications` or run it from wherever you like.
-
-> **First launch:** because the app is ad-hoc signed rather than notarized, Gatekeeper will block it on the first open. Right-click → **Open** → **Open** to allow it once. After that it launches normally.
-
----
-
-## Project structure
-
-```
-AdvisoryTagger/
-├── Package.swift
-├── build_app.sh
-└── Sources/ExplicitTagger/
-    ├── ExplicitTaggerApp.swift   # App entry point, AppDelegate, font registration
-    ├── ContentView.swift         # Main UI (SwiftUI)
-    ├── AboutView.swift           # About window
-    ├── MP4Tagger.swift           # Pure Swift MP4 atom reader/writer
-    └── Resources/
-        ├── icon.png
-        └── AppleGaramond-Light.ttf
-```
-
----
-
 ## Disclaimer
 
 ExplicitTagger is an independent utility and has no affiliation with Apple Inc. iTunes and Apple Music are trademarks of Apple Inc.
